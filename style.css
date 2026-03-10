@@ -6,30 +6,32 @@ body {
   margin: 0;
   background: #dcdcdc;
   font-family: "Mongolian Baiti", "Noto Sans Mongolian", "Arial Unicode MS", sans-serif;
-  color: #323232;
+  color: #2f2f2f;
 }
 
 .cv-page {
   width: 860px;
-  min-height: 1180px;
+  min-height: 1215px;
   margin: 12px auto;
   background: #efefef;
-  padding: 26px 34px 34px;
+  padding: 26px 34px 30px;
+  position: relative;
 }
 
-/* Vertical Mongolian text */
+/* бүх босоо монгол бичиг */
 .vertical-block {
   writing-mode: vertical-rl;
   text-orientation: mixed;
-  line-height: 1.7;
+  line-height: 1.65;
   font-size: 18px;
+  letter-spacing: 0.5px;
 }
 
-/* Top area */
+/* ---------------- TOP ---------------- */
 .top-section {
   display: grid;
-  grid-template-columns: 280px 1fr;
-  column-gap: 36px;
+  grid-template-columns: 270px 1fr;
+  column-gap: 28px;
   align-items: start;
 }
 
@@ -45,63 +47,74 @@ body {
   object-fit: cover;
   border-radius: 50%;
   border: 5px solid #6e7897;
-  background: #fff;
+  background: #ffffff;
 }
 
 .intro-wrap {
-  min-height: 320px;
+  min-height: 330px;
+  padding-top: 26px;
 }
 
 .top-line {
   width: 100%;
   height: 3px;
   background: #6e7897;
-  margin-top: 42px;
-  margin-bottom: 24px;
+  margin: 22px 0 24px;
 }
 
 .intro-text {
+  height: 245px;
   display: flex;
   gap: 18px;
   align-items: flex-start;
-  height: 240px;
+  justify-content: flex-start;
 }
 
 .vertical-title {
   margin: 0;
   font-size: 34px;
   font-weight: 500;
-  color: #444;
+  color: #444444;
 }
 
-/* Divider */
+.intro-text p {
+  margin: 0;
+  font-size: 18px;
+  color: #444444;
+}
+
+/* ---------------- DIVIDER ---------------- */
 .divider-section {
-  margin-top: 22px;
+  margin-top: 18px;
   display: grid;
-  grid-template-columns: 150px 1fr;
-  column-gap: 16px;
+  grid-template-columns: 120px 1fr;
+  column-gap: 18px;
   align-items: center;
 }
 
 .mini-title {
+  height: 64px;
   font-size: 28px;
-  color: #444;
-  height: 82px;
+  color: #444444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .timeline-line {
   position: relative;
   border-top: 3px solid #6e7897;
   height: 1px;
+  margin-top: 10px;
 }
 
 .dot {
   position: absolute;
-  top: -8px;
-  width: 14px;
-  height: 14px;
-  background: #6e7897;
+  top: -9px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
+  background: #6e7897;
 }
 
 .left-dot {
@@ -109,29 +122,30 @@ body {
 }
 
 .center-dot {
-  left: 54%;
+  left: 53%;
 }
 
-/* Education / Experience */
+/* ---------------- EDUCATION + EXPERIENCE ---------------- */
 .double-vertical-section {
-  margin-top: 18px;
+  margin-top: 22px;
+  padding-left: 175px;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 60px;
-  padding-left: 170px;
+  column-gap: 82px;
 }
 
 .column-block {
-  height: 180px;
+  min-height: 165px;
   display: flex;
   gap: 18px;
+  align-items: flex-start;
 }
 
 .section-title {
   margin: 0;
   font-size: 30px;
   font-weight: 500;
-  color: #444;
+  color: #444444;
 }
 
 .item-group {
@@ -139,71 +153,78 @@ body {
   gap: 14px;
 }
 
-.item-group p,
-.contact-info p,
-.left-bottom p,
-.intro-text p {
+.item-group p {
   margin: 0;
+  font-size: 18px;
+  color: #3d3d3d;
 }
 
-/* Lower layout */
+/* ---------------- LOWER GRID ---------------- */
 .lower-grid {
   margin-top: 28px;
   display: grid;
-  grid-template-columns: 260px 92px 1fr;
-  grid-template-rows: auto auto;
-  column-gap: 24px;
-  row-gap: 24px;
-  min-height: 520px;
+  grid-template-columns: 275px 92px 1fr;
+  grid-template-rows: 310px 260px;
+  column-gap: 26px;
+  row-gap: 22px;
+  min-height: 600px;
 }
 
-/* Left contact */
+/* -------- left contact -------- */
 .left-contact {
   grid-column: 1;
   grid-row: 1;
   display: grid;
-  grid-template-columns: 48px 1fr;
-  column-gap: 12px;
-  border-right: 3px solid #6e7897;
-  padding-right: 16px;
+  grid-template-columns: 52px 1fr;
+  column-gap: 14px;
 }
 
 .contact-icons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
   align-items: center;
-  padding-top: 6px;
+  padding-top: 4px;
 }
 
 .icon-circle {
-  width: 30px;
-  height: 30px;
+  width: 29px;
+  height: 29px;
   border-radius: 50%;
   background: #6e7897;
-  color: #fff;
+  color: #ffffff;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .left-contact-content {
-  display: flex;
-  gap: 18px;
+  display: grid;
+  grid-template-columns: 74px 1fr 74px;
+  column-gap: 18px;
+  align-items: stretch;
 }
 
 .contact-title {
   font-size: 28px;
-  color: #444;
+  color: #444444;
 }
 
 .contact-info {
-  height: 260px;
   font-size: 18px;
+  color: #444444;
+  min-height: 250px;
+  padding-left: 14px;
+  border-left: 3px solid #6e7897;
+  border-right: 3px solid #6e7897;
 }
 
-/* Center title */
+.contact-info p {
+  margin: 0;
+}
+
+/* -------- middle big vertical title -------- */
 .center-vertical-title {
   grid-column: 2;
   grid-row: 1 / span 2;
@@ -212,16 +233,18 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 42px;
-  color: #444;
+  color: #444444;
+  min-height: 530px;
 }
 
-/* Right top */
+/* -------- right top -------- */
 .right-top {
   grid-column: 3;
   grid-row: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 34px;
+  column-gap: 36px;
+  align-items: start;
 }
 
 .skills-block,
@@ -231,27 +254,51 @@ body {
   gap: 18px;
 }
 
-/* Left bottom */
+.skills-block p,
+.lang-block p {
+  margin: 0;
+}
+
+/* -------- left bottom -------- */
 .left-bottom {
   grid-column: 1;
   grid-row: 2;
-  min-height: 220px;
   display: flex;
   gap: 18px;
+  min-height: 235px;
 }
 
-/* Right bottom */
+.left-bottom p {
+  margin: 0;
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+/* -------- right bottom -------- */
 .right-bottom {
   grid-column: 3;
   grid-row: 2;
-  min-height: 220px;
   display: flex;
   gap: 18px;
+  min-height: 230px;
   border-top: 3px solid #6e7897;
   padding-top: 18px;
 }
 
-/* Responsive */
+.right-bottom p {
+  margin: 0;
+  font-size: 18px;
+  color: #3d3d3d;
+}
+
+/* бага зэрэг тэнцвэржүүлэлт */
+.right-top .item-group,
+.right-bottom .item-group,
+.left-bottom .item-group {
+  align-items: flex-start;
+}
+
+/* responsive */
 @media (max-width: 900px) {
   .cv-page {
     width: 96%;
