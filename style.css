@@ -5,33 +5,33 @@
 }
 
 body {
-  background: #d9d9d9;
-  font-family: serif;
+  background: #cfcfcf;
+  font-family: "Noto Sans Mongolian", serif;
   display: flex;
   justify-content: center;
-  padding: 20px;
+  padding: 22px;
 }
 
 .cv-page {
-  width: 1400px;
-  height: 900px;
+  width: 1160px;
+  height: 760px;
   background: #efefef;
   position: relative;
   overflow: hidden;
-  color: #2b2b2b;
+  color: #2f2f2f;
 }
 
-/* top left */
+/* photo */
 .photo-wrap {
   position: absolute;
-  top: 120px;
-  left: 120px;
-  width: 190px;
-  height: 190px;
-  border: 5px solid #707b9c;
+  top: 102px;
+  left: 92px;
+  width: 160px;
+  height: 160px;
+  border: 4px solid #717b9b;
   border-radius: 50%;
   overflow: hidden;
-  background: #fff;
+  background: #f7f7f7;
 }
 
 .photo-wrap img {
@@ -40,80 +40,82 @@ body {
   object-fit: cover;
 }
 
+/* about */
 .about-line {
   position: absolute;
-  top: 60px;
-  left: 330px;
-  width: 390px;
-  height: 3px;
-  background: #707b9c;
+  top: 48px;
+  left: 275px;
+  width: 325px;
+  height: 2px;
+  background: #717b9b;
 }
 
 .name-block {
   position: absolute;
-  top: 130px;
-  left: 380px;
-  width: 110px;
+  top: 108px;
+  left: 335px;
+  width: 90px;
 }
 
 .name-block h1 {
-  font-size: 42px;
+  font-size: 34px;
   font-weight: 400;
+  line-height: 1.2;
 }
 
 .about-block {
   position: absolute;
-  top: 110px;
-  left: 450px;
-  width: 280px;
+  top: 98px;
+  left: 400px;
+  width: 250px;
 }
 
 .about-block p {
-  font-size: 24px;
-  line-height: 1.8;
+  font-size: 18px;
+  line-height: 1.85;
 }
 
-/* top right */
+/* education / skills */
 .edu-skill-title {
   position: absolute;
   top: 110px;
-  left: 830px;
-  font-size: 30px;
+  left: 732px;
+  font-size: 20px;
 }
 
 .edu-skill-line {
   position: absolute;
-  top: 115px;
-  left: 920px;
-  width: 400px;
-  height: 3px;
-  background: #707b9c;
+  top: 118px;
+  left: 825px;
+  width: 335px;
+  height: 2px;
+  background: #717b9b;
 }
 
 .dot {
   position: absolute;
-  top: 108px;
-  width: 14px;
-  height: 14px;
+  top: 113px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  background: #707b9c;
+  background: #717b9b;
 }
 
-.dot1 { left: 915px; }
-.dot2 { left: 1130px; }
+.dot1 { left: 821px; }
+.dot2 { left: 1079px; }
 
 .education-block {
   position: absolute;
-  top: 145px;
-  left: 950px;
-  width: 130px;
+  top: 148px;
+  left: 855px;
+  width: 120px;
 }
 
 .skills-block {
   position: absolute;
-  top: 145px;
-  left: 1160px;
-  width: 130px;
+  top: 148px;
+  left: 1040px;
+  width: 120px;
 }
 
 .education-block h3,
@@ -122,9 +124,9 @@ body {
 .experience2 h3,
 .lang-block h3,
 .other-block h3 {
-  font-size: 26px;
-  margin-bottom: 10px;
-  font-weight: 400;
+  font-size: 19px;
+  margin-bottom: 8px;
+  font-weight: 500;
 }
 
 .education-block p,
@@ -133,121 +135,125 @@ body {
 .experience2 p,
 .lang-block p,
 .other-block p {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.7;
+  margin-bottom: 4px;
 }
 
-/* lower left */
+/* contact */
 .contact-title {
   position: absolute;
-  top: 470px;
-  left: 110px;
-  font-size: 36px;
+  top: 395px;
+  left: 82px;
+  font-size: 26px;
 }
 
 .icons {
   position: absolute;
-  top: 395px;
-  left: 190px;
+  top: 328px;
+  left: 140px;
   display: flex;
-  gap: 18px;
+  gap: 12px;
 }
 
 .icon {
-  width: 32px;
-  height: 32px;
+  width: 24px;
+  height: 24px;
   border-radius: 50%;
-  background: #707b9c;
+  background: #717b9b;
   color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-size: 11px;
+  font-family: Arial, sans-serif;
 }
 
 .contact-columns {
   position: absolute;
-  top: 400px;
-  left: 210px;
+  top: 322px;
+  left: 170px;
   display: flex;
-  gap: 28px;
+  gap: 14px;
 }
 
 .contact-col {
-  min-height: 230px;
-  padding-left: 18px;
-  border-left: 3px solid #707b9c;
+  min-height: 150px;
+  padding-left: 14px;
+  border-left: 2px solid #717b9b;
+  width: 165px;
 }
 
 .contact-col p {
-  font-size: 20px;
-  line-height: 1.8;
+  font-size: 15px;
+  line-height: 1.75;
+  margin-bottom: 4px;
 }
 
 .contact-note {
   position: absolute;
-  top: 510px;
-  left: 480px;
-  width: 220px;
+  top: 380px;
+  left: 405px;
+  width: 165px;
 }
 
 .contact-note p {
-  font-size: 23px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.75;
 }
 
 /* center */
 .center-line {
   position: absolute;
-  top: 410px;
-  left: 430px;
-  width: 3px;
-  height: 360px;
-  background: #707b9c;
+  top: 340px;
+  left: 390px;
+  width: 2px;
+  height: 300px;
+  background: #717b9b;
 }
 
 .work-title {
   position: absolute;
-  top: 525px;
-  left: 760px;
-  font-size: 48px;
+  top: 490px;
+  left: 655px;
+  font-size: 34px;
 }
 
-/* right middle */
+/* work */
 .experience1 {
   position: absolute;
-  top: 315px;
-  left: 900px;
-  width: 170px;
+  top: 285px;
+  left: 760px;
+  width: 125px;
 }
 
 .experience2 {
   position: absolute;
-  top: 315px;
-  left: 1080px;
-  width: 170px;
+  top: 285px;
+  left: 930px;
+  width: 150px;
 }
 
-/* bottom right */
+/* bottom */
 .bottom-line {
   position: absolute;
-  top: 610px;
-  left: 900px;
-  width: 340px;
-  height: 3px;
-  background: #707b9c;
+  top: 545px;
+  left: 760px;
+  width: 285px;
+  height: 2px;
+  background: #717b9b;
 }
 
 .lang-block {
   position: absolute;
-  top: 650px;
-  left: 930px;
-  width: 120px;
+  top: 575px;
+  left: 782px;
+  width: 95px;
 }
 
 .other-block {
   position: absolute;
-  top: 650px;
-  left: 1090px;
-  width: 150px;
+  top: 575px;
+  left: 930px;
+  width: 110px;
 }
