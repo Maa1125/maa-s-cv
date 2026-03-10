@@ -1,84 +1,153 @@
 <!DOCTYPE html>
-<html>
+<html lang="mn">
 <head>
-<title>My CV</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mongolian Style CV</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="cv-page">
 
-<div class="cv">
+    <!-- Top section -->
+    <section class="top-section">
+      <div class="photo-wrap">
+        <img src="images/profile.jpg" alt="Profile photo" class="profile-photo">
+      </div>
 
-<header>
-<h1>Maa Bna</h1>
-<p>Computer Science Student</p>
+      <div class="intro-wrap">
+        <div class="top-line"></div>
 
-<div class="contact">
-<p>Email: maa@email.com</p>
-<p>Phone: 99112233</p>
-</div>
-</header>
+        <div class="vertical-block intro-text">
+          <h1 class="vertical-title">ᠵᠠᠭᠳᠰᠢᠢᠨ ᠮᠠᠠ</h1>
 
-<section class="profile">
-<h2>Profile</h2>
-<p>
-Motivated computer science student with interest in
-software development and system design.
-</p>
-</section>
+          <p>
+            ᠪᠢ ᠮᠡᠳᠡᠯᠭᠡ ᠬᠠᠷᠢᠯᠴᠠᠭ᠎ᠠ ᠪᠣᠯᠣᠨ ᠳᠢᠵᠠᠢᠨ
+            ᠰᠣᠨᠢᠷᠬᠣᠳᠣᠭ ᠰᠤᠷᠠᠯᠴᠠᠭᠴᠢ ᠮᠥᠨ.
+            ᠪᠦᠲᠦᠭᠡᠯ ᠰᠡᠳᠭᠦᠯᠳᠡᠶ, ᠴᠡᠪᠡᠷ ᠴᠡᠭᠴᠡᠯᠡᠭ
+            ᠬᠡᠪ ᠮᠠᠶᠢᠭ ᠳᠤᠷᠠᠲᠠᠢ. ᠲᠡᠬᠨᠣᠯᠣᠭᠢ,
+            UI/UX, ᠪᠣᠯᠣᠨ ᠪᠤᠲᠦᠭᠡᠯ ᠲᠥᠰᠥᠯ ᠨᠠᠮᠠᠢᠭ
+            ᠰᠣᠨᠢᠷᠬᠤᠯᠳᠠᠭ.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<div class="columns">
+    <!-- Divider -->
+    <section class="divider-section">
+      <div class="mini-title vertical-block">ᠨᠠᠮᠲᠠᠷ</div>
 
-<div class="left">
+      <div class="timeline-line">
+        <span class="dot left-dot"></span>
+        <span class="dot center-dot"></span>
+      </div>
+    </section>
 
-<section>
-<h2>Education</h2>
-<p>National University of Mongolia</p>
-<p>Computer Science</p>
-</section>
+    <!-- Education / Experience -->
+    <section class="double-vertical-section">
+      <div class="vertical-block column-block">
+        <h2 class="section-title">ᠪᠣᠯᠣᠪᠰᠤᠷᠠᠯ</h2>
 
-<section>
-<h2>Experience</h2>
-<p>Intern - IT Support</p>
-<p>2024</p>
-</section>
+        <div class="item-group">
+          <p>2020 - 2024</p>
+          <p>ᠮᠤᠯᠢᠰ ᠢᠯᠡᠬᠡ ᠰᠤᠷᠭᠠᠭᠤᠯᠢ</p>
+          <p>ICT / ᠮᠡᠳᠡᠯᠭᠡ ᠬᠠᠷᠢᠯᠴᠠᠭ᠎ᠠ</p>
+        </div>
 
-<section>
-<h2>Projects</h2>
-<p>Snake Game (C + BeagleBone)</p>
-<p>IVR System (Asterisk)</p>
-</section>
+        <div class="item-group">
+          <p>2016 - 2020</p>
+          <p>ᠢᠷᠡᠭᠡᠳᠦᠢ ᠠᠬᠯᠠᠬᠤ ᠰᠤᠷᠭᠠᠭᠤᠯᠢ</p>
+        </div>
+      </div>
 
-</div>
+      <div class="vertical-block column-block">
+        <h2 class="section-title">ᠲᠤᠷᠱᠢᠯᠭ᠎ᠠ</h2>
 
-<div class="right">
+        <div class="item-group">
+          <p>2024</p>
+          <p>Intern - IT Support</p>
+          <p>ᠰᠢᠰᠲ᠋ᠧᠮ ᠳᠡᠮᠵᠢᠬᠦ, ᠬᠡᠷᠡᠭᠯᠡᠭᠴᠢ ᠳᠤᠰᠠᠯᠠᠬᠤ</p>
+        </div>
 
-<section>
-<h2>Skills</h2>
-<ul>
-<li>HTML / CSS</li>
-<li>C / Python</li>
-<li>SQL</li>
-</ul>
-</section>
+        <div class="item-group">
+          <p>2023</p>
+          <p>Academic Projects</p>
+          <p>HTML / CSS, C, Python, SQL</p>
+        </div>
+      </div>
+    </section>
 
-<section>
-<h2>Languages</h2>
-<p>Mongolian</p>
-<p>English</p>
-</section>
+    <!-- Main lower layout -->
+    <section class="lower-grid">
 
-<section>
-<h2>Interests</h2>
-<p>Programming</p>
-<p>Travel</p>
-</section>
+      <!-- Contact -->
+      <div class="left-contact">
+        <div class="contact-icons">
+          <span class="icon-circle">☎</span>
+          <span class="icon-circle">⌂</span>
+          <span class="icon-circle">✉</span>
+        </div>
 
-</div>
+        <div class="left-contact-content">
+          <div class="vertical-block contact-title">ᠬᠣᠯᠪᠣᠭ᠎ᠠ ᠪᠠᠷᠢᠬᠤ</div>
 
-</div>
+          <div class="vertical-block contact-info">
+            <p>99112233</p>
+            <p>ᠤᠯᠠᠭᠠᠨᠪᠠᠭᠠᠲᠤᠷ</p>
+            <p>zagdshinee@gmail.com</p>
+          </div>
+        </div>
+      </div>
 
-</div>
+      <!-- Center vertical title -->
+      <div class="center-vertical-title vertical-block">
+        ᠴᠠᠳᠠᠪᠠᠷᠢ
+      </div>
 
+      <!-- Right top -->
+      <div class="right-top">
+        <div class="vertical-block skills-block">
+          <h2 class="section-title">ᠴᠠᠳᠠᠪᠠᠷᠢ</h2>
+          <div class="item-group">
+            <p>HTML / CSS</p>
+            <p>Python</p>
+            <p>C</p>
+            <p>SQL</p>
+          </div>
+        </div>
+
+        <div class="vertical-block lang-block">
+          <h2 class="section-title">ᠬᠡᠯᠡ</h2>
+          <div class="item-group">
+            <p>ᠮᠣᠩᠭᠣᠯ</p>
+            <p>English</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Left bottom -->
+      <div class="left-bottom vertical-block">
+        <h2 class="section-title">ᠮᠢᠨᠢ ᠲᠤᠬᠠᠶ</h2>
+        <p>
+          ᠪᠢ ᠨᠠᠶᠢᠷᠠᠭᠲᠠᠢ, ᠬᠠᠷᠢᠤᠴᠯᠠᠭᠠᠲᠠᠢ,
+          ᠪᠦᠲᠦᠭᠡᠯ ᠰᠡᠳᠭᠦᠯᠳᠡᠶ ᠬᠦᠮᠦᠨ. ᠰᠤᠷᠠᠯᠴᠠᠬᠤ,
+          ᠰᠢᠨ᠎ᠡ ᠵᠦᠢᠯ ᠤᠵᠡᠬᠦ, ᠬᠡᠷᠡᠭᠲᠡᠢ ᠳᠢᠵᠠᠢᠨ
+          ᠪᠤᠲᠦᠭᠡᠯ ᠬᠢᠬᠦ ᠳᠤᠷᠠᠲᠠᠢ.
+        </p>
+      </div>
+
+      <!-- Right bottom -->
+      <div class="right-bottom vertical-block">
+        <h2 class="section-title">ᠰᠣᠨᠢᠷᠬᠣᠯ</h2>
+        <div class="item-group">
+          <p>UI / UX</p>
+          <p>Programming</p>
+          <p>Travel</p>
+          <p>Photography</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
 </body>
 </html>
