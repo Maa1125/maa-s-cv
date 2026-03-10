@@ -1,232 +1,253 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-  background:#d9d9d9;
-  display:flex;
-  justify-content:center;
-  padding:20px;
+body {
+  background: #d9d9d9;
+  font-family: serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
 }
 
-.page{
-  width:840px;
-  height:1188px;
-  background:#efefef;
-  position:relative;
-  overflow:hidden;
-  font-family:"Noto Sans Mongolian", serif;
-  color:#2b2b2b;
+.cv-page {
+  width: 1400px;
+  height: 900px;
+  background: #efefef;
+  position: relative;
+  overflow: hidden;
+  color: #2b2b2b;
 }
 
-.vtxt{
-  writing-mode:vertical-rl;
-  text-orientation:mixed;
-  line-height:1.55;
+/* top left */
+.photo-wrap {
+  position: absolute;
+  top: 120px;
+  left: 120px;
+  width: 190px;
+  height: 190px;
+  border: 5px solid #707b9c;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #fff;
 }
 
-.photo-frame{
-  position:absolute;
-  top:45px;
-  left:18px;
-  width:275px;
-  height:275px;
-  border:5px solid #707b9c;
-  border-radius:50%;
-  overflow:hidden;
-  background:#efefef;
+.photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.photo-frame img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.about-line {
+  position: absolute;
+  top: 60px;
+  left: 330px;
+  width: 390px;
+  height: 3px;
+  background: #707b9c;
 }
 
-.top-line{
-  position:absolute;
-  top:82px;
-  left:314px;
-  width:470px;
-  height:3px;
-  background:#707b9c;
+.name-block {
+  position: absolute;
+  top: 130px;
+  left: 380px;
+  width: 110px;
 }
 
-.name{
-  position:absolute;
-  top:118px;
-  left:355px;
-  font-size:52px;
-  height:250px;
+.name-block h1 {
+  font-size: 42px;
+  font-weight: 400;
 }
 
-.about{
-  position:absolute;
-  top:112px;
-  left:455px;
-  font-size:22px;
-  height:260px;
-  width:320px;
+.about-block {
+  position: absolute;
+  top: 110px;
+  left: 450px;
+  width: 280px;
 }
 
-.edu-title-left{
-  position:absolute;
-  top:405px;
-  left:42px;
-  font-size:32px;
-  height:95px;
+.about-block p {
+  font-size: 24px;
+  line-height: 1.8;
 }
 
-.mid-line{
-  position:absolute;
-  top:454px;
-  left:180px;
-  width:610px;
-  height:3px;
-  background:#707b9c;
+/* top right */
+.edu-skill-title {
+  position: absolute;
+  top: 110px;
+  left: 830px;
+  font-size: 30px;
 }
 
-.dot{
-  position:absolute;
-  width:14px;
-  height:14px;
-  border-radius:50%;
-  background:#707b9c;
-  top:448px;
+.edu-skill-line {
+  position: absolute;
+  top: 115px;
+  left: 920px;
+  width: 400px;
+  height: 3px;
+  background: #707b9c;
 }
 
-.dot1{ left:178px; }
-.dot2{ left:510px; }
-
-.education{
-  position:absolute;
-  top:493px;
-  left:232px;
-  font-size:19px;
-  height:185px;
+.dot {
+  position: absolute;
+  top: 108px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #707b9c;
 }
 
-.skills{
-  position:absolute;
-  top:493px;
-  left:560px;
-  font-size:19px;
-  height:170px;
+.dot1 { left: 915px; }
+.dot2 { left: 1130px; }
+
+.education-block {
+  position: absolute;
+  top: 145px;
+  left: 950px;
+  width: 130px;
 }
 
-.section-head{
-  font-weight:700;
-  font-size:24px;
+.skills-block {
+  position: absolute;
+  top: 145px;
+  left: 1160px;
+  width: 130px;
 }
 
-.contact-label{
-  position:absolute;
-  top:690px;
-  left:38px;
-  font-size:28px;
-  height:200px;
+.education-block h3,
+.skills-block h3,
+.experience1 h3,
+.experience2 h3,
+.lang-block h3,
+.other-block h3 {
+  font-size: 26px;
+  margin-bottom: 10px;
+  font-weight: 400;
 }
 
-.addr{
-  position:absolute;
-  top:670px;
-  left:118px;
-  font-size:18px;
-  height:230px;
-  border-left:3px solid #707b9c;
-  padding-left:8px;
+.education-block p,
+.skills-block p,
+.experience1 p,
+.experience2 p,
+.lang-block p,
+.other-block p {
+  font-size: 22px;
+  line-height: 1.7;
 }
 
-.email{
-  position:absolute;
-  top:670px;
-  left:190px;
-  font-size:18px;
-  height:230px;
-  border-left:3px solid #707b9c;
-  padding-left:8px;
+/* lower left */
+.contact-title {
+  position: absolute;
+  top: 470px;
+  left: 110px;
+  font-size: 36px;
 }
 
-.phone{
-  position:absolute;
-  top:670px;
-  left:263px;
-  font-size:18px;
-  height:230px;
-  border-left:3px solid #707b9c;
-  padding-left:8px;
+.icons {
+  position: absolute;
+  top: 395px;
+  left: 190px;
+  display: flex;
+  gap: 18px;
 }
 
-.latin{
-  font-family:Arial, sans-serif;
-  letter-spacing:0.5px;
+.icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #707b9c;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
 }
 
-.left-note{
-  position:absolute;
-  top:930px;
-  left:38px;
-  font-size:20px;
-  height:205px;
-  width:240px;
+.contact-columns {
+  position: absolute;
+  top: 400px;
+  left: 210px;
+  display: flex;
+  gap: 28px;
 }
 
-.center-vertical-line{
-  position:absolute;
-  top:620px;
-  left:308px;
-  width:3px;
-  height:520px;
-  background:#707b9c;
+.contact-col {
+  min-height: 230px;
+  padding-left: 18px;
+  border-left: 3px solid #707b9c;
 }
 
-.main-title{
-  position:absolute;
-  top:760px;
-  left:350px;
-  font-size:50px;
-  height:295px;
+.contact-col p {
+  font-size: 20px;
+  line-height: 1.8;
 }
 
-.exp1{
-  position:absolute;
-  top:700px;
-  left:520px;
-  font-size:19px;
-  height:170px;
+.contact-note {
+  position: absolute;
+  top: 510px;
+  left: 480px;
+  width: 220px;
 }
 
-.exp2{
-  position:absolute;
-  top:700px;
-  left:650px;
-  font-size:19px;
-  height:180px;
+.contact-note p {
+  font-size: 23px;
+  line-height: 1.7;
 }
 
-.bottom-line{
-  position:absolute;
-  top:1085px;
-  left:430px;
-  width:360px;
-  height:3px;
-  background:#707b9c;
+/* center */
+.center-line {
+  position: absolute;
+  top: 410px;
+  left: 430px;
+  width: 3px;
+  height: 360px;
+  background: #707b9c;
 }
 
-.lang-block{
-  position:absolute;
-  top:1118px;
-  left:520px;
-  font-size:19px;
-  height:130px;
+.work-title {
+  position: absolute;
+  top: 525px;
+  left: 760px;
+  font-size: 48px;
 }
 
-.other-block{
-  position:absolute;
-  top:1118px;
-  left:660px;
-  font-size:19px;
-  height:130px;
+/* right middle */
+.experience1 {
+  position: absolute;
+  top: 315px;
+  left: 900px;
+  width: 170px;
+}
+
+.experience2 {
+  position: absolute;
+  top: 315px;
+  left: 1080px;
+  width: 170px;
+}
+
+/* bottom right */
+.bottom-line {
+  position: absolute;
+  top: 610px;
+  left: 900px;
+  width: 340px;
+  height: 3px;
+  background: #707b9c;
+}
+
+.lang-block {
+  position: absolute;
+  top: 650px;
+  left: 930px;
+  width: 120px;
+}
+
+.other-block {
+  position: absolute;
+  top: 650px;
+  left: 1090px;
+  width: 150px;
 }
