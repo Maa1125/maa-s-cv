@@ -1,307 +1,209 @@
-* {
-  box-sizing: border-box;
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
 }
 
-body {
-  margin: 0;
-  background: #dcdcdc;
-  font-family: "Mongolian Baiti", "Noto Sans Mongolian", "Arial Unicode MS", sans-serif;
-  color: #2f2f2f;
+body{
+background:#d9d9d9;
+font-family:"Mongolian Baiti","Noto Sans Mongolian";
 }
 
-.cv-page {
-  width: 860px;
-  min-height: 1215px;
-  margin: 12px auto;
-  background: #efefef;
-  padding: 26px 34px 30px;
-  position: relative;
+.cv{
+width:900px;
+height:1200px;
+margin:40px auto;
+background:#ececec;
+padding:40px;
+position:relative;
 }
 
-/* бүх босоо монгол бичиг */
-.vertical-block {
-  writing-mode: vertical-rl;
-  text-orientation: mixed;
-  line-height: 1.65;
-  font-size: 18px;
-  letter-spacing: 0.5px;
+/* ===== Монгол босоо текст ===== */
+
+.vertical{
+writing-mode:vertical-rl;
+text-orientation:mixed;
+font-size:18px;
+line-height:1.7;
 }
 
-/* ---------------- TOP ---------------- */
-.top-section {
-  display: grid;
-  grid-template-columns: 270px 1fr;
-  column-gap: 28px;
-  align-items: start;
+/* ===== зураг ===== */
+
+.photo{
+position:absolute;
+top:40px;
+left:40px;
+width:230px;
+height:230px;
+border-radius:50%;
+border:6px solid #6f7893;
+object-fit:cover;
 }
 
-.photo-wrap {
-  display: flex;
-  justify-content: center;
-  padding-top: 34px;
+/* ===== дээд урт шугам ===== */
+
+.top-line{
+position:absolute;
+top:90px;
+left:330px;
+width:480px;
+height:3px;
+background:#6f7893;
 }
 
-.profile-photo {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 50%;
-  border: 5px solid #6e7897;
-  background: #ffffff;
+/* ===== introduction ===== */
+
+.intro{
+position:absolute;
+top:120px;
+left:330px;
+display:flex;
+gap:25px;
 }
 
-.intro-wrap {
-  min-height: 330px;
-  padding-top: 26px;
+/* ===== timeline ===== */
+
+.timeline{
+position:absolute;
+top:390px;
+left:180px;
+width:630px;
+height:3px;
+background:#6f7893;
 }
 
-.top-line {
-  width: 100%;
-  height: 3px;
-  background: #6e7897;
-  margin: 22px 0 24px;
+.dot{
+position:absolute;
+width:14px;
+height:14px;
+background:#6f7893;
+border-radius:50%;
+top:-6px;
 }
 
-.intro-text {
-  height: 245px;
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
-  justify-content: flex-start;
+.dot1{
+left:-7px;
 }
 
-.vertical-title {
-  margin: 0;
-  font-size: 34px;
-  font-weight: 500;
-  color: #444444;
+.dot2{
+left:320px;
 }
 
-.intro-text p {
-  margin: 0;
-  font-size: 18px;
-  color: #444444;
+/* ===== education ===== */
+
+.education{
+position:absolute;
+top:430px;
+left:220px;
+display:flex;
+gap:20px;
 }
 
-/* ---------------- DIVIDER ---------------- */
-.divider-section {
-  margin-top: 18px;
-  display: grid;
-  grid-template-columns: 120px 1fr;
-  column-gap: 18px;
-  align-items: center;
+/* ===== experience ===== */
+
+.experience{
+position:absolute;
+top:430px;
+left:520px;
+display:flex;
+gap:20px;
 }
 
-.mini-title {
-  height: 64px;
-  font-size: 28px;
-  color: #444444;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+/* ===== contact icons ===== */
+
+.icons{
+position:absolute;
+top:560px;
+left:220px;
+display:flex;
+flex-direction:column;
+gap:15px;
 }
 
-.timeline-line {
-  position: relative;
-  border-top: 3px solid #6e7897;
-  height: 1px;
-  margin-top: 10px;
+.icon{
+width:30px;
+height:30px;
+background:#6f7893;
+border-radius:50%;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:14px;
 }
 
-.dot {
-  position: absolute;
-  top: -9px;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  background: #6e7897;
+/* ===== contact text ===== */
+
+.contact{
+position:absolute;
+top:560px;
+left:270px;
+display:flex;
+gap:20px;
 }
 
-.left-dot {
-  left: 0;
+/* ===== гол босоо гарчиг ===== */
+
+.center-title{
+position:absolute;
+top:540px;
+left:450px;
+font-size:40px;
+writing-mode:vertical-rl;
+border-left:3px solid #6f7893;
+padding-left:20px;
+height:500px;
+display:flex;
+align-items:center;
 }
 
-.center-dot {
-  left: 53%;
+/* ===== skills ===== */
+
+.skills{
+position:absolute;
+top:560px;
+left:540px;
+display:flex;
+gap:20px;
 }
 
-/* ---------------- EDUCATION + EXPERIENCE ---------------- */
-.double-vertical-section {
-  margin-top: 22px;
-  padding-left: 175px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 82px;
+/* ===== languages ===== */
+
+.languages{
+position:absolute;
+top:560px;
+left:720px;
+display:flex;
+gap:20px;
 }
 
-.column-block {
-  min-height: 165px;
-  display: flex;
-  gap: 18px;
-  align-items: flex-start;
+/* ===== hobbies ===== */
+
+.hobbies{
+position:absolute;
+bottom:120px;
+left:180px;
+display:flex;
+gap:20px;
 }
 
-.section-title {
-  margin: 0;
-  font-size: 30px;
-  font-weight: 500;
-  color: #444444;
+/* ===== bottom line ===== */
+
+.bottom-line{
+position:absolute;
+bottom:260px;
+right:40px;
+width:360px;
+height:3px;
+background:#6f7893;
 }
 
-.item-group {
-  display: flex;
-  gap: 14px;
-}
+/* ===== references ===== */
 
-.item-group p {
-  margin: 0;
-  font-size: 18px;
-  color: #3d3d3d;
-}
-
-/* ---------------- LOWER GRID ---------------- */
-.lower-grid {
-  margin-top: 28px;
-  display: grid;
-  grid-template-columns: 275px 92px 1fr;
-  grid-template-rows: 310px 260px;
-  column-gap: 26px;
-  row-gap: 22px;
-  min-height: 600px;
-}
-
-/* -------- left contact -------- */
-.left-contact {
-  grid-column: 1;
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: 52px 1fr;
-  column-gap: 14px;
-}
-
-.contact-icons {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  align-items: center;
-  padding-top: 4px;
-}
-
-.icon-circle {
-  width: 29px;
-  height: 29px;
-  border-radius: 50%;
-  background: #6e7897;
-  color: #ffffff;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-}
-
-.left-contact-content {
-  display: grid;
-  grid-template-columns: 74px 1fr 74px;
-  column-gap: 18px;
-  align-items: stretch;
-}
-
-.contact-title {
-  font-size: 28px;
-  color: #444444;
-}
-
-.contact-info {
-  font-size: 18px;
-  color: #444444;
-  min-height: 250px;
-  padding-left: 14px;
-  border-left: 3px solid #6e7897;
-  border-right: 3px solid #6e7897;
-}
-
-.contact-info p {
-  margin: 0;
-}
-
-/* -------- middle big vertical title -------- */
-.center-vertical-title {
-  grid-column: 2;
-  grid-row: 1 / span 2;
-  border-right: 3px solid #6e7897;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 42px;
-  color: #444444;
-  min-height: 530px;
-}
-
-/* -------- right top -------- */
-.right-top {
-  grid-column: 3;
-  grid-row: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 36px;
-  align-items: start;
-}
-
-.skills-block,
-.lang-block {
-  min-height: 220px;
-  display: flex;
-  gap: 18px;
-}
-
-.skills-block p,
-.lang-block p {
-  margin: 0;
-}
-
-/* -------- left bottom -------- */
-.left-bottom {
-  grid-column: 1;
-  grid-row: 2;
-  display: flex;
-  gap: 18px;
-  min-height: 235px;
-}
-
-.left-bottom p {
-  margin: 0;
-  font-size: 18px;
-  color: #3d3d3d;
-}
-
-/* -------- right bottom -------- */
-.right-bottom {
-  grid-column: 3;
-  grid-row: 2;
-  display: flex;
-  gap: 18px;
-  min-height: 230px;
-  border-top: 3px solid #6e7897;
-  padding-top: 18px;
-}
-
-.right-bottom p {
-  margin: 0;
-  font-size: 18px;
-  color: #3d3d3d;
-}
-
-/* бага зэрэг тэнцвэржүүлэлт */
-.right-top .item-group,
-.right-bottom .item-group,
-.left-bottom .item-group {
-  align-items: flex-start;
-}
-
-/* responsive */
-@media (max-width: 900px) {
-  .cv-page {
-    width: 96%;
-    padding: 18px;
-  }
+.references{
+position:absolute;
+bottom:120px;
+right:40px;
+display:flex;
+gap:20px;
 }
