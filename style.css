@@ -1,209 +1,277 @@
-*{
-box-sizing:border-box;
-margin:0;
-padding:0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-background:#d9d9d9;
-font-family:"Mongolian Baiti","Noto Sans Mongolian";
+body {
+  background: #dcdcdc;
+  font-family: "Noto Sans Mongolian", serif;
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  color: #222;
 }
 
-.cv{
-width:900px;
-height:1200px;
-margin:40px auto;
-background:#ececec;
-padding:40px;
-position:relative;
+.cv-page {
+  width: 794px;
+  min-height: 1123px;
+  background: #eeeeee;
+  position: relative;
+  padding: 28px 34px 28px 34px;
+  overflow: hidden;
 }
 
-/* ===== Монгол босоо текст ===== */
-
-.vertical{
-writing-mode:vertical-rl;
-text-orientation:mixed;
-font-size:18px;
-line-height:1.7;
+.vertical,
+.vertical-small {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: "Noto Sans Mongolian", serif;
 }
 
-/* ===== зураг ===== */
-
-.photo{
-position:absolute;
-top:40px;
-left:40px;
-width:230px;
-height:230px;
-border-radius:50%;
-border:6px solid #6f7893;
-object-fit:cover;
+.top-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
 }
 
-/* ===== дээд урт шугам ===== */
-
-.top-line{
-position:absolute;
-top:90px;
-left:330px;
-width:480px;
-height:3px;
-background:#6f7893;
+.photo-wrap {
+  width: 280px;
+  height: 280px;
+  border: 5px solid #6d7898;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #fff;
 }
 
-/* ===== introduction ===== */
-
-.intro{
-position:absolute;
-top:120px;
-left:330px;
-display:flex;
-gap:25px;
+.photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-/* ===== timeline ===== */
-
-.timeline{
-position:absolute;
-top:390px;
-left:180px;
-width:630px;
-height:3px;
-background:#6f7893;
+.about-wrap {
+  flex: 1;
+  position: relative;
+  min-height: 300px;
 }
 
-.dot{
-position:absolute;
-width:14px;
-height:14px;
-background:#6f7893;
-border-radius:50%;
-top:-6px;
+.top-line {
+  width: 100%;
+  height: 3px;
+  background: #6d7898;
+  margin-top: 4px;
+  margin-bottom: 24px;
 }
 
-.dot1{
-left:-7px;
+.about-content {
+  display: flex;
+  gap: 28px;
+  align-items: flex-start;
 }
 
-.dot2{
-left:320px;
+.name-block {
+  font-size: 52px;
+  line-height: 1.05;
+  height: 250px;
 }
 
-/* ===== education ===== */
-
-.education{
-position:absolute;
-top:430px;
-left:220px;
-display:flex;
-gap:20px;
+.about-text {
+  font-size: 22px;
+  line-height: 1.8;
+  height: 260px;
+  max-height: 260px;
 }
 
-/* ===== experience ===== */
-
-.experience{
-position:absolute;
-top:430px;
-left:520px;
-display:flex;
-gap:20px;
+.middle-header {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
-/* ===== contact icons ===== */
-
-.icons{
-position:absolute;
-top:560px;
-left:220px;
-display:flex;
-flex-direction:column;
-gap:15px;
+.left-title {
+  font-size: 34px;
+  height: 80px;
 }
 
-.icon{
-width:30px;
-height:30px;
-background:#6f7893;
-border-radius:50%;
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:14px;
+.middle-line {
+  flex: 1;
+  height: 3px;
+  background: #6d7898;
+  position: relative;
 }
 
-/* ===== contact text ===== */
-
-.contact{
-position:absolute;
-top:560px;
-left:270px;
-display:flex;
-gap:20px;
+.middle-line .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #6d7898;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-/* ===== гол босоо гарчиг ===== */
-
-.center-title{
-position:absolute;
-top:540px;
-left:450px;
-font-size:40px;
-writing-mode:vertical-rl;
-border-left:3px solid #6f7893;
-padding-left:20px;
-height:500px;
-display:flex;
-align-items:center;
+.middle-line .dot:first-child {
+  left: 0;
 }
 
-/* ===== skills ===== */
-
-.skills{
-position:absolute;
-top:560px;
-left:540px;
-display:flex;
-gap:20px;
+.middle-line .dot:last-child {
+  left: 55%;
 }
 
-/* ===== languages ===== */
-
-.languages{
-position:absolute;
-top:560px;
-left:720px;
-display:flex;
-gap:20px;
+.edu-skill-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 18px 120px 0 180px;
+  min-height: 180px;
 }
 
-/* ===== hobbies ===== */
-
-.hobbies{
-position:absolute;
-bottom:120px;
-left:180px;
-display:flex;
-gap:20px;
+.edu-block,
+.skill-block {
+  height: 170px;
+  font-size: 18px;
+  line-height: 1.8;
 }
 
-/* ===== bottom line ===== */
-
-.bottom-line{
-position:absolute;
-bottom:260px;
-right:40px;
-width:360px;
-height:3px;
-background:#6f7893;
+.sub-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
-/* ===== references ===== */
+.sub-text {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
 
-.references{
-position:absolute;
-bottom:120px;
-right:40px;
-display:flex;
-gap:20px;
+.space-top {
+  margin-top: 16px;
+}
+
+.lower-section {
+  margin-top: 34px;
+  display: flex;
+  align-items: stretch;
+  min-height: 640px;
+}
+
+.left-panel {
+  width: 260px;
+  padding-right: 18px;
+  position: relative;
+}
+
+.contact-icons {
+  display: flex;
+  gap: 12px;
+  margin-left: 56px;
+  margin-bottom: 12px;
+}
+
+.icon-circle {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #6d7898;
+  color: #fff;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-area {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  border-left: none;
+}
+
+.contact-title {
+  font-size: 28px;
+  height: 240px;
+}
+
+.contact-text {
+  font-size: 18px;
+  height: 240px;
+  padding-left: 8px;
+  border-left: 3px solid #6d7898;
+}
+
+.latin-mail {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-family: Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+.left-bottom-text {
+  margin-top: 42px;
+  font-size: 20px;
+  line-height: 1.8;
+  height: 240px;
+}
+
+.center-divider {
+  width: 90px;
+  border-left: 3px solid #6d7898;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.main-side-title {
+  font-size: 50px;
+  line-height: 1.1;
+  margin-top: 120px;
+  height: 360px;
+}
+
+.right-panel {
+  flex: 1;
+  padding-left: 26px;
+  position: relative;
+}
+
+.experience-block {
+  display: inline-block;
+  height: 190px;
+  margin-right: 42px;
+  font-size: 18px;
+  line-height: 1.8;
+  vertical-align: top;
+}
+
+.experience-line {
+  width: 100%;
+  height: 3px;
+  background: #6d7898;
+  margin-top: 28px;
+}
+
+.bottom-info {
+  display: flex;
+  gap: 48px;
+  margin-top: 34px;
+}
+
+.ref-block {
+  height: 150px;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* responsive */
+@media (max-width: 860px) {
+  body {
+    padding: 0;
+  }
+
+  .cv-page {
+    width: 100%;
+    min-height: auto;
+  }
 }
