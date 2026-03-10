@@ -1,49 +1,260 @@
-body{
-font-family: Arial;
-background:#f5f5f5;
+* {
+  box-sizing: border-box;
 }
 
-.cv{
-width:800px;
-margin:auto;
-background:white;
-padding:40px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+body {
+  margin: 0;
+  background: #dcdcdc;
+  font-family: "Mongolian Baiti", "Noto Sans Mongolian", "Arial Unicode MS", sans-serif;
+  color: #323232;
 }
 
-header{
-background:#1C5D99;
-color:white;
-padding:20px;
+.cv-page {
+  width: 860px;
+  min-height: 1180px;
+  margin: 12px auto;
+  background: #efefef;
+  padding: 26px 34px 34px;
 }
 
-header h1{
-margin:0;
+/* Vertical Mongolian text */
+.vertical-block {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  line-height: 1.7;
+  font-size: 18px;
 }
 
-.contact{
-font-size:14px;
+/* Top area */
+.top-section {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  column-gap: 36px;
+  align-items: start;
 }
 
-h2{
-color:#D4A017;
-border-bottom:2px solid #D4A017;
-padding-bottom:5px;
+.photo-wrap {
+  display: flex;
+  justify-content: center;
+  padding-top: 34px;
 }
 
-.columns{
-display:flex;
-gap:40px;
+.profile-photo {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #6e7897;
+  background: #fff;
 }
 
-.left{
-width:60%;
+.intro-wrap {
+  min-height: 320px;
 }
 
-.right{
-width:40%;
+.top-line {
+  width: 100%;
+  height: 3px;
+  background: #6e7897;
+  margin-top: 42px;
+  margin-bottom: 24px;
 }
 
-ul{
-padding-left:20px;
+.intro-text {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  height: 240px;
+}
+
+.vertical-title {
+  margin: 0;
+  font-size: 34px;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Divider */
+.divider-section {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  column-gap: 16px;
+  align-items: center;
+}
+
+.mini-title {
+  font-size: 28px;
+  color: #444;
+  height: 82px;
+}
+
+.timeline-line {
+  position: relative;
+  border-top: 3px solid #6e7897;
+  height: 1px;
+}
+
+.dot {
+  position: absolute;
+  top: -8px;
+  width: 14px;
+  height: 14px;
+  background: #6e7897;
+  border-radius: 50%;
+}
+
+.left-dot {
+  left: 0;
+}
+
+.center-dot {
+  left: 54%;
+}
+
+/* Education / Experience */
+.double-vertical-section {
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 60px;
+  padding-left: 170px;
+}
+
+.column-block {
+  height: 180px;
+  display: flex;
+  gap: 18px;
+}
+
+.section-title {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 500;
+  color: #444;
+}
+
+.item-group {
+  display: flex;
+  gap: 14px;
+}
+
+.item-group p,
+.contact-info p,
+.left-bottom p,
+.intro-text p {
+  margin: 0;
+}
+
+/* Lower layout */
+.lower-grid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 260px 92px 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 24px;
+  row-gap: 24px;
+  min-height: 520px;
+}
+
+/* Left contact */
+.left-contact {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  column-gap: 12px;
+  border-right: 3px solid #6e7897;
+  padding-right: 16px;
+}
+
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding-top: 6px;
+}
+
+.icon-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: #6e7897;
+  color: #fff;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.left-contact-content {
+  display: flex;
+  gap: 18px;
+}
+
+.contact-title {
+  font-size: 28px;
+  color: #444;
+}
+
+.contact-info {
+  height: 260px;
+  font-size: 18px;
+}
+
+/* Center title */
+.center-vertical-title {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  border-right: 3px solid #6e7897;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  color: #444;
+}
+
+/* Right top */
+.right-top {
+  grid-column: 3;
+  grid-row: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 34px;
+}
+
+.skills-block,
+.lang-block {
+  min-height: 220px;
+  display: flex;
+  gap: 18px;
+}
+
+/* Left bottom */
+.left-bottom {
+  grid-column: 1;
+  grid-row: 2;
+  min-height: 220px;
+  display: flex;
+  gap: 18px;
+}
+
+/* Right bottom */
+.right-bottom {
+  grid-column: 3;
+  grid-row: 2;
+  min-height: 220px;
+  display: flex;
+  gap: 18px;
+  border-top: 3px solid #6e7897;
+  padding-top: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cv-page {
+    width: 96%;
+    padding: 18px;
+  }
 }
